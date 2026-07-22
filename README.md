@@ -11,7 +11,7 @@ Implemented HTTP-based GPS telemetry transmission over LTE/GPRS, enabling real-t
 
 Developed embedded firmware for hardware integration, UART communication, GNSS data processing, and cloud connectivity using STM32CubeIDE, ST-Link V2, and UART debugging tools.
 
-###########################################################   PROJECT ARCHITECTURE    ###########################################################################
+##########   PROJECT ARCHITECTURE    ############
 
                     +---------------------+
                     |   NEO-M8M GPS       |
@@ -58,8 +58,7 @@ Developed embedded firmware for hardware integration, UART communication, GNSS d
                          |
                          ▼
                   Cloud Server
- ############################################################# SOFTWARE ARCHITECTURE ###########################################################################
-
+############ SOFTWARE ARCHITECTURE ##############
  main()
 │
 ├── System_Init()
