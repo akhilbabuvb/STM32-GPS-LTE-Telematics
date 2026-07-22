@@ -58,7 +58,11 @@ Developed embedded firmware for hardware integration, UART communication, GNSS d
                          |
                          ▼
                   Cloud Server
+
+                  
 ############ SOFTWARE ARCHITECTURE ##############
+
+
  main()
 │
 ├── System_Init()
