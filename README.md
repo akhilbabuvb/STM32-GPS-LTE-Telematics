@@ -105,4 +105,23 @@ An ARM Cortex-M3 (STM32F103C8T6) firmware application designed to interface with
 * **Debug Port:** UART1 (TX=PA9, RX=PA10) configured at 115200-8-N-1 for system logs.
 * **Programming Interface:** SWD (TMS/TCK) via ST-Link V2.
 
+# STM32 GPS & LTE Telematics System - Stage 2
+
+We completed GPS Parsing so that we got
+
+
+RAW: $GNRMC,101106.00,A,1000.70649,N,07707.14034,E,0.140,,230726,,,A*66
+
+
+=====================================
+UTC            : 10:11:06
+Status         : A
+Raw Latitude   : 1000.70649 N
+Raw Longitude  : 07707.14034 E
+Latitude       : 10.011775°
+Longitude      : 77.119003°
+Speed          : 0.26 km/h
+Heading        : N/A
+Date           : 23/07/2026
+=====================================
 
