@@ -13,10 +13,10 @@ Developed embedded firmware for hardware integration, UART communication, GNSS d
 
 ##########   PROJECT ARCHITECTURE    ############
 
-                    +---------------------+
-                    |   NEO-M8M GPS       |
-                    | 9600 bps UART       |
-                    +----------+----------+
+                    +--------------------------+
+                    |   NEO-M8M GPS            |
+                    | A7670C 2G-4G LTE bps UART|
+                    +----------+---------------+
                                |
                                | UART1 RX
                                |
@@ -36,11 +36,11 @@ Developed embedded firmware for hardware integration, UART communication, GNSS d
 |  • Longitude                                         |
 |  • Speed                                             |
 |  • UTC Time                                          |
-|  • Device Status                                     |
+|  • Distance Covered  / Heading                       |
 |                                                      |
 | UART2 (LTE Modem)                                    |
 |  • AT Command Driver                                 |
-|  • HTTP/MQTT                                         |
+|  • HTTP                                              |
 |  • Send Telemetry                                    |
 |                                                      |
 +----------------------+-------------------------------+
@@ -60,33 +60,7 @@ Developed embedded firmware for hardware integration, UART communication, GNSS d
                   Cloud Server
 
                   
-############ SOFTWARE ARCHITECTURE ##############
 
-
- main()
-│
-├── System_Init()
-├── UART1_Init()      // GPS
-├── UART2_Init()      // A7670C
-├── RingBuffer_Init()
-│
-└── while(1)
-    │
-    ├── Read GPS sentence
-    │
-    ├── Parse $GNRMC
-    │
-    ├── Store:
-    │     • Latitude
-    │     • Longitude
-    │     • Speed
-    │     • UTC Time
-    │
-    ├── Build telemetry packet
-    │
-    ├── Send AT commands
-    │
-    └── Upload to cloud
 
  
 
