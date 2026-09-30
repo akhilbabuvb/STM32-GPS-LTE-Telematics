@@ -77,6 +77,8 @@ An ARM Cortex-M3 (STM32F103C8T6) firmware application designed to interface with
 
 ## 🔌 Hardware Setup (Stage 1)
 * **Debug Port:** UART1 (TX=PA9, RX=PA10) configured at 115200-8-N-1 for system logs.
+* ** Port:** UART2 - GPS connectivity,
+* ** Port:** UART3 - GSM LT.
 * **Programming Interface:** SWD (TMS/TCK) via ST-Link V2.
 
 # STM32 GPS & LTE Telematics System - Stage 2
