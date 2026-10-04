@@ -1,0 +1,31 @@
+#ifndef GPS_H
+#define GPS_H
+
+typedef struct
+{
+    char utcTime[20];
+    char formattedTime[20];
+
+    char date[20];
+    char formattedDate[20];
+
+    char status[5];
+
+    float latitude;
+    float longitude;
+
+    float speed;
+    float heading;
+
+    float totalDistance;
+    float distance;
+
+} GPS_Data_t;
+
+void GPS_Init(void);
+void GPS_Task(void);
+void GPS_UARTCallback(void);
+void GPS_UARTErrorCallback(void);
+void GPS_UARTErrorCallback(void);
+GPS_Data_t *GPS_GetData(void);
+#endif
