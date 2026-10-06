@@ -1,3 +1,8 @@
+*===================================LinkedIn Post Project Link =================================================*
+
+https://lnkd.in/p/dfYKHxpz
+
+*===============================================================================================================*
 # STM32-GPS-LTE-Telematics
 STM32-Based 4G Vehicle Telematics Device | Product Prototype
 
