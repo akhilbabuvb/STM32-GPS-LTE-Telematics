@@ -115,3 +115,11 @@ Distance       : 0.000 km
 Heading        : 0.00°
 Date           : 26/07/2026
 =====================================
+
+
+Future Updations
+
+1 OTA updates
+2 Command Handler
+3 Future Needs depend on latest technologies demand
+4 etc.......................................................
