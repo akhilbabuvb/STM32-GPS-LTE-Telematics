@@ -23,7 +23,7 @@ Developed embedded firmware for hardware integration, UART communication, GNSS d
                     | A7670C 2G-4G LTE bps UART|
                     +----------+---------------+
                                |
-                               | UART1 RX
+                               | UART RX
                                |
                                ▼
 +------------------------------------------------------+
